@@ -4,8 +4,6 @@ FROM debian:bullseye
 # Instalar Asterisk y dependencias
 RUN apt-get update && apt-get install -y \
     asterisk \
-    libpjsip2 \
-    libpjproject2 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar los archivos de configuración personalizados al contenedor
