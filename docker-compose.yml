@@ -6,6 +6,7 @@ services:
     ports:
       - "5065:5060/udp"
       - "8088:8088"
+      - "10000-20000:10000-20000/udp"
     volumes:
       - ./etc/asterisk:/etc/asterisk
     restart: unless-stopped
